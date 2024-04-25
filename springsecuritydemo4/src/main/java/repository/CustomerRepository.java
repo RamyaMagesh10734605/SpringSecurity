@@ -10,6 +10,7 @@ import model.Customer;
 @Repository
 public interface CustomerRepository extends CrudRepository<Customer, Integer>{
 	List<Customer> findByEmail(String email);
+	Customer save(Customer customer);
 	
 
 }
