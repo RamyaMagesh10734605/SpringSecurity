@@ -67,14 +67,16 @@ public class SecuirtyConfig {
 	
 	*/
 	//Approach 3 - JDBC
-	@Bean
+	/*@Bean
 	UserDetailsService	userDetailsService(DataSource datasource) {
 		return new JdbcUserDetailsManager(datasource);
-	}
+	}*/
 	
 	@Bean
 	PasswordEncoder passwordEncoder() {
 		return NoOpPasswordEncoder.getInstance();
 	}
+	
+	
 
 }
